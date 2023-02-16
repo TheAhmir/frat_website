@@ -59,9 +59,9 @@ export default function Header({}: Props) {
             bgColor="transparent"
             />
             
-            <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
+            <a href="https://cash.app/$stelmo87" className='uppercase hidden md:inline-flex text-sm text-gray-400'>
                 Donate
-            </p>
+            </a>
         </motion.div>
     </header>
   )
