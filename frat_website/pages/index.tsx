@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Hero from '@/components/Hero';
 import Brotherhood from '@/components/Brotherhood';
 import Rush from '@/components/Rush';
+import History from '@/components/History';
 
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
         </section>
 
         {/* History */}
+        <section id='History' className='snap-center'>
+          <History />
+        </section>
 
         {/* Philantropy */}
 

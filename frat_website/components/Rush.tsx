@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import { EnvelopeIcon } from "@heroicons/react/24/solid"
-import { useForm, SubmitHandler} from "react-hook-form";
+import { useForm, SubmitHandler} from "react-hook-form"
+import emailjs from '@emailjs/browser'
 
 type Props = {}
 
@@ -15,12 +16,13 @@ type Inputs = {
 export default function Rush({}: Props) {
     const { register, handleSubmit } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (formData) => {
-        window.location.href = `mailto:123Ahmir@gmail?subject=Rush:${formData.name}&body=Hi, my name is ${formData.name}, and I am interested in Rushing Delta Phi!%0D%0AHere is my contact info:%0D%0AEmail: ${formData.email}%0D%0APhone Number: ${formData.phone}%0D%0A%0D%0AOne More Thing: ${formData.message}.`
-        /*emailjs.send("service_h0m8kaj","template_dossv9m",{
-            from_name: "Ahmir",
+        //window.location.href = `mailto:123Ahmir@gmail?subject=New Rush:${formData.name}&body=Hi, my name is ${formData.name}, and I am interested in Rushing Delta Phi!%0D%0AHere is my contact info:%0D%0AEmail: ${formData.email}%0D%0APhone Number: ${formData.phone}%0D%0A%0D%0AOne More Thing: ${formData.message}.`
+        emailjs.send("service_h0m8kaj","template_dossv9m",{
+            from_name: formData.name,
             to_name: "Delta Phi Fraternity",
-            message: "hi",
-            });*/
+            message: `Hi, my name is ${formData.name}, \n \nI am interested in Rushing Delta Phi! Here is my contact info:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone Number: ${formData.phone}\n\nMessage: ${formData.message}.`,
+            },
+            'K3pQkeUkJe9UkHaKD')
     }
 
   return (
@@ -34,7 +36,7 @@ export default function Rush({}: Props) {
     transition={{
         duration: 1.5
     }}>
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Rush
         </h3>
         <div className='pt-20 space-y-5 px-0 md:px-10'>
