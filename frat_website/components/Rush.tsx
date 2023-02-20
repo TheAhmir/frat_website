@@ -53,7 +53,7 @@ export default function Rush({}: Props) {
 
                 <div>
             <div className='flex pt-5 items-center space-x-5 justify-center'>
-                <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
+                <EnvelopeIcon className='text-[#68BBE3] h-7 w-7 animate-pulse' />
                 <p className='text-xl'>stelmohalloa@gmail.com</p>
             </div>
         </div> 
@@ -65,7 +65,7 @@ export default function Rush({}: Props) {
                 </div>
                 <input {...register('email')} placeholder='Email' className='contactInput' type="email" />
                 <textarea {...register('message')} placeholder='Message' className='contactInput'/>
-                <button className='bg-[#F7AB0B] py-5 px-10 rounded-md text-black font-bold'
+                <button className='bg-[#68BBE3] py-5 px-10 rounded-md text-black font-bold'
                 type='submit'>Submit</button>
             </form>
         </div>

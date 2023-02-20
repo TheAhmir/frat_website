@@ -20,7 +20,7 @@ export default function Brotherhood({}: Props) {
         "<--"
     ]
   return (
-    <motion.div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
+    <motion.div className='flex flex-col relative h-screen text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center'
     initial={{
         opacity: 0
     }}
@@ -50,11 +50,11 @@ export default function Brotherhood({}: Props) {
                 once: true
             }}
             src={brotherhood.src}
-            className='-mb-20 md:mb-0 p-10 flex flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[350px]'/>
+            className='-mb-20 p-10 flex flex-shrink-0 w-56 h-56 rounded-full object-cover md:w-95 md:h-95 xl:w-[300px] xl:h-[350px]'/>
 
         </div>
         <div className='px-0 md:px-10'>
-                <h4 className='text-4xl font-semibold text-center'><span className='underline decoration-[#F7AB0A]/50'>The Three Pillars</span></h4>
+                <h4 className='text-4xl font-semibold text-center'><span className='underline decoration-[#68BBE3]/50'>The Three Pillars</span></h4>
                 <div className='relative pt-5 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory text-center'>
                     {pillars.map((pillar,i) =>(
                         <p className='text-base w-full flex-shrink-0 snap-center items-center justify-center'>
