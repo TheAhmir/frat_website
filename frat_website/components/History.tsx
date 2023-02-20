@@ -20,13 +20,13 @@ export default function History({}: Props) {
         History
         </h3>
         <div className='pt-20 space-y-5 px-0 md:px-10'>
-                <p className='text-xs md:text-left'>
+                <p className='text-xs md:text-sm lg:text-base md:text-left'>
                 On May 21, 1986, Delta Phi National granted colony status to Omega Alpha's co-founders: Thomas Lee Toler and Marc Eric Maurer. If Omega Alpha was to be granted full chapter status, they had to complete a successful rush and pledging season and demonstrate interest for Delta Phi on the College's campus. Area alumni, mostly from the Rho Chapter (University of Virginia), attended a dinner during which the initial steps of starting a chapter were discussed. Shortly thereafter, Bud Walker expressed interest in joining. These three founders set up Omega Alpha’s first rush the following fall semester. Six more members joined. National and local alumni continued their support by arranging for the nine men to be initiated at the Xi Chapter (Johns Hopkins University) on March 6, 1987.
                 </p>
-                <p className='text-xs md:text-left'>
+                <p className='text-xs md:text-sm lg:text-base md:text-left'>
                 On September 26, 1987, Delta Phi’s Annual Convention officially extended Omega Alpha a charter. The Council for Fraternal Affairs (now the Interfraternity Council) at the College recognized Delta Phi on October 19, 1989.
                 </p>
-                <p className='text-xs md:text-left pb-10'>
+                <p className='text-xs md:text-sm lg:text-base md:text-left pb-10'>
                 Since the granting of its charter, Omega Alpha has resided in several residence halls and college apartments, including Ludwell and Cabell.  In January 1994, the College granted the fraternity a permanent residence located at 197 Armistead Avenue.  In the Fall of 2013, the fraternity relocated to the College’s newly constructed Fraternity Row along Ukrop Way. Due to an incident that took place in 2020, William and Mary stripped the Omega Alpha Chapter of Delta Phi of it's place on campus alongside it's formal recognition as a functioning fraternity of the College. Despite the hardships that would befall the fraternity, the chapter remains nationally recognized and supported by The Interfraternity Council (IFC) and continues to operate off campus.
                 </p>  
 

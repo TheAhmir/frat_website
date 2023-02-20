@@ -52,7 +52,7 @@ export default function Rush({}: Props) {
                 </p>  
 
                 <div>
-            <div className='flex pt-5 items-center space-x-5 justify-center'>
+            <div className='flex pt-0 md:pt-5 items-center space-x-5 justify-center'>
                 <EnvelopeIcon className='text-[#68BBE3] h-7 w-7 animate-pulse' />
                 <p className='text-xl'>stelmohalloa@gmail.com</p>
             </div>

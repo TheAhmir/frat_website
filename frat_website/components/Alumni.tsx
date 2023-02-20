@@ -31,10 +31,10 @@ export default function Alumni({}: Props) {
         Alumni
         </h3>
         <div className='pt-20 space-y-10 px-0 md:px-10'>
-                <p className='pt-20 text-base md:text-left'>
+                <p className='pt-20 text-base md:text-lg md:text-left'>
                 We want to thank all of our alumnus for continued unwaivering support and leadership for our organization. With the help of our alumni we have been able to maintain a functioning brotherhood and form tight nit relationships that allow us to confidently refer to one another as brothers. 
                 </p>
-                <p className='text-base md:text-left'>
+                <p className='text-base md:text-lg md:text-left'>
                 We would also like to acknowledge our alumni for continuing to direct each and every brother towards success following our time in college with unique connections and networking opportunities.
                 </p>
                 
