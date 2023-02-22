@@ -50,7 +50,7 @@ export default function Brotherhood({}: Props) {
                 once: true
             }}
             src={brotherhood.src}
-            className='-mb-20 p-10 flex flex-shrink-0 w-56 h-56 rounded-full object-cover md:w-95 md:h-95 xl:w-[300px] xl:h-[350px]'/>
+            className='-mb-20 p-10 flex flex-shrink-0 w-56 h-56 rounded-full object-cover md:w-95 md:h-95 xl:w-[350px] xl:h-[350px]'/>
 
         </div>
         <div className='px-0 md:px-10'>
