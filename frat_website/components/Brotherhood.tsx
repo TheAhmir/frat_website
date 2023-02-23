@@ -57,7 +57,7 @@ export default function Brotherhood({}: Props) {
                 <h4 className='text-4xl font-semibold text-center'><span className='underline decoration-[#68BBE3]/50'>The Three Pillars</span></h4>
                 <div className='relative pt-5 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory text-center'>
                     {pillars.map((pillar,i) =>(
-                        <p className='text-base w-full flex-shrink-0 snap-center items-center justify-center'>
+                        <p key={pillar} className='text-base w-full flex-shrink-0 snap-center items-center justify-center'>
                         <span className='italic'>{ title[ i ] }</span><br></br><br></br>{pillar}<br></br><br></br>{ arrow[ i ] }
                         </p>
                     ))}
