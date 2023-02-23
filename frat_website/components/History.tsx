@@ -27,12 +27,12 @@ export default function History({}: Props) {
                 On September 26, 1987, Delta Phi’s Annual Convention officially extended Omega Alpha a charter. The Council for Fraternal Affairs (now the Interfraternity Council) at the College recognized Delta Phi on October 19, 1989.
                 </p>
                 <p className='text-xs md:text-sm lg:text-base md:text-left pb-10'>
-                Since the granting of its charter, Omega Alpha has resided in several residence halls and college apartments, including Ludwell and Cabell.  In January 1994, the College granted the fraternity a permanent residence located at 197 Armistead Avenue.  In the Fall of 2013, the fraternity relocated to the College’s newly constructed Fraternity Row along Ukrop Way. Due to an incident that took place in 2020, William and Mary stripped the Omega Alpha Chapter of Delta Phi of it's place on campus alongside it's formal recognition as a functioning fraternity of the College. Despite the hardships that would befall the fraternity, the chapter remains nationally recognized and supported by The Interfraternity Council (IFC) and continues to operate off campus.
+                Since the granting of its charter, Omega Alpha has resided in several residence halls and college apartments, including Ludwell and Cabell. In January 1994, the College granted the fraternity a permanent residence located at 197 Armistead Avenue. In the Fall of 2013, the fraternity relocated to the College’s newly constructed Fraternity Row along Ukrop Way. In 2020, Delta Phi was made an example of by the William and Mary Administration, and had to move off-campus. However, the Omega Alpha Chapter is still officially chartered by Delta Phi Nationals and remains a pillar of the William and Mary community.
                 </p>  
 
-                <a href='/OurStatement.pdf' className='uppercase text-center md:inline-flex text-sm text-gray-400'>
+                {/* <a href='/OurStatement.pdf' className='uppercase text-center md:inline-flex text-sm text-gray-400'>
                 Click here to see our statement on the matter
-                </a>
+                </a> */}
 
             
 
