@@ -24,7 +24,7 @@ export default function Header({}: Props) {
         }}
         className='flex flex-row items-center'>
             {/* social icons */}
-            <SocialIcon url="https://instagram.com/st.elmohall?igshid=YmMyMTA2M2Y=" 
+            <SocialIcon url="https://instagram.com/wmdeltaphi?igshid=YmMyMTA2M2Y=" 
             fgColor="gray"
             bgColor="transparent"/>
 
