@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { motion } from "framer-motion"
 import { EnvelopeIcon } from "@heroicons/react/24/solid"
 import { useForm, SubmitHandler} from "react-hook-form"
 import emailjs from '@emailjs/browser'
+import { useState } from 'react';
+import { setConstantValue } from 'typescript'
 
 type Props = {}
 
@@ -14,7 +16,7 @@ type Inputs = {
 }
 
 export default function Rush({}: Props) {
-    const { register, handleSubmit } = useForm<Inputs>();
+    const { register, handleSubmit, setValue } = useForm<Inputs>();
     const onSubmit: SubmitHandler<Inputs> = (formData) => {
         //window.location.href = `mailto:123Ahmir@gmail?subject=New Rush:${formData.name}&body=Hi, my name is ${formData.name}, and I am interested in Rushing Delta Phi!%0D%0AHere is my contact info:%0D%0AEmail: ${formData.email}%0D%0APhone Number: ${formData.phone}%0D%0A%0D%0AOne More Thing: ${formData.message}.`
         emailjs.send("service_h0m8kaj","template_dossv9m",{
@@ -23,6 +25,12 @@ export default function Rush({}: Props) {
             message: `Hi, my name is ${formData.name}, \n \nI am interested in Rushing Delta Phi! Here is my contact info:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone Number: ${formData.phone}\n\nMessage: ${formData.message}.`,
             },
             'K3pQkeUkJe9UkHaKD')
+        
+            setValue( "name", '');
+            setValue( "phone", '');
+            setValue( "email", '');
+            setValue( "message", '');
+        
     }
 
   return (
@@ -39,7 +47,7 @@ export default function Rush({}: Props) {
         <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Rush
         </h3>
-        <div className='pt-20 space-y-5 px-0 md:px-10'>
+        <div className='pt-20 space-y-5 px-10 md:px-10'>
                 <h4 className='text-4xl font-semibold'>What you will find here</h4>
                 <p className='text-sm'>
                 Academic and scholastic achievements are the top priority of every college man and a vital element of The Three Pillars.  All members of the Delta Phi fraternity are expected to uphold the grade standards of our national organization as well as the expectations set forth by the College of William and Mary.
@@ -58,9 +66,9 @@ export default function Rush({}: Props) {
             </div>
         </div> 
         
-        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
+        <form id="insertForm" onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto px-10 md:px-10'>
                 <div className='flex space-x-2'>
-                    <input {...register('name')} placeholder='Name' className='contactInput' type="text" />
+                    <input {...register('name')} id="full_name" placeholder='Name' className='contactInput' type="text" />
                     <input {...register('phone')} placeholder='Phone #' className='contactInput' type="tel" />
                 </div>
                 <input {...register('email')} placeholder='Email' className='contactInput' type="email" />
